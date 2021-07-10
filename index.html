@@ -13,10 +13,75 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Hello, world!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Jinshaj|Profile</title>
   </head>
   <body>
-      <div class="loader"></div>
+    <div class="loader"></div>
+    
+    <div class="hero card">
+      <div class="nav-menu">
+        
+        <ul class="nav justify-content-end text-uppercase">
+          <li class="nav-item">
+            <button type="button" class="btn btn-default shadow-none nav-link text-uppercase" onclick="">about</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-default shadow-none nav-link text-uppercase" onclick="">skills</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-default shadow-none nav-link text-uppercase" onclick="" >Portfolio</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-default shadow-none nav-link text-uppercase" onclick="" >contact</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="container card profile">
+        <section id="about">
+          <div class="text-center">
+            <div class="col-md-12 col-sm-12 col-col-lg-12">
+              <div class="form-group">
+                <img
+                  src="/images/jinu.jpg"
+                  alt="image1"
+                  class="img-fluid w-75 rounded-circle mt-5"
+                />
+              </div>
+              <div class="output text-primary text-capitalize mt-5" id="output">
+                <h1 class="cursor"></h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="text-center">
+          <p class="text-primary footer-text">
+            &copy;
+            <span
+              ><script>
+                document.write(new Date().getFullYear());
+              </script>
+            designed by   <span class="text-danger">G-Nu_06</span></span
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -36,6 +101,7 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
