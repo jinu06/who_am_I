@@ -3,7 +3,32 @@ body {
   width: auto;
   background: url("../images/pexels-vincent-tan-978844.jpg") no-repeat
     center/cover;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.tabcontent{
+  animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .loader {
   position: fixed;
   left: 0px;
@@ -104,6 +129,26 @@ p.cursor::after {
 }
 .icon a {
   text-decoration: none;
+}
+.cookie-alert {
+  border-radius: 17px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 320px;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+}
+
+.cookie-alert.show {
+  border-radius: 17px;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
 }
 
 @media only screen and (min-width: 992px) {
